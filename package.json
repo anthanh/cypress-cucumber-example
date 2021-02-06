@@ -1,0 +1,25 @@
+{
+  "name": "cypress-cucumber-example",
+  "version": "0.0.1",
+  "description": "Example cypress project with cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthanh/cypress-cucumber-example.git"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "gherkin",
+    "typescript"
+  ],
+  "author": "anthanh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anthanh/cypress-cucumber-example/issues"
+  },
+  "homepage": "https://github.com/anthanh/cypress-cucumber-example#readme"
+}
