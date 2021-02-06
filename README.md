@@ -8,6 +8,12 @@ This is an example project of how you can integrate:
 
 Also, this [VSCode plugin](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete) is very recomended:
 
+## Setup
+
+```
+npm install
+```
+
 ## Available Scripts
 
 ### `npm run cypress:open`
