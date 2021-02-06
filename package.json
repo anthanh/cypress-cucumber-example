@@ -4,7 +4,8 @@
   "description": "Example cypress project with cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/anthanh/cypress-cucumber-example/issues"
   },
-  "homepage": "https://github.com/anthanh/cypress-cucumber-example#readme"
+  "homepage": "https://github.com/anthanh/cypress-cucumber-example#readme",
+  "devDependencies": {
+    "cypress": "^6.4.0"
+  }
 }
