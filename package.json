@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
-    "cypress:run": "cypress open"
+    "cypress:run": "cypress open",
+    "lint:cypress": "tsc --project cypress/tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/anthanh/cypress-cucumber-example#readme",
   "devDependencies": {
-    "cypress": "^6.4.0"
+    "cypress": "^6.4.0",
+    "typescript": "^4.1.3"
   }
 }
