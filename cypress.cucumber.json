@@ -1,13 +1,20 @@
 {
+    "baseUrl": "https://fancy.com",
+    "video": false,
     "integrationFolder": "cypress/integration",
-    "testFiles": "**/*.ts",
+    "testFiles": "**/*.{feature,features}",
     "projectId": "example",
     "reporter": "dot",
+    "viewportWidth": 1280,
+    "viewportHeight": 720,
     "screenshotsFolder": "cypress/reports/screenshots",
     "watchForFileChanges": false,
     "chromeWebSecurity": false,
     "experimentalComponentTesting": true,
     "experimentalFetchPolyfill": true,
+    "pageLoadTimeout": 30000,
+    "defaultCommandTimeout": 10000,
+    "requestTimeout": 10000,
     "retries": {
       "runMode": 2,
       "openMode": 0

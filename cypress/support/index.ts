@@ -18,3 +18,10 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+// Reset all test between tests
+before(() => {
+    window.sessionStorage.clear();
+    cy.clearCookies();
+    cy.clearLocalStorage();
+});

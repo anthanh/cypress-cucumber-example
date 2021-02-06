@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
-    "cypress:run": "cypress open",
+    "cypress:open:e2e": "cypress open -e TAGS='not @ignore and (@e2e or @regression)' --config-file cypress.cucumber.json",
+    "cypress:run": "cypress run",
+    "cypress:run:e2e": "cypress run -e TAGS='not @ignore and (@e2e or @regression)' --config-file cypress.cucumber.json",
     "lint:cypress": "tsc --project cypress/tsconfig.json"
   },
   "repository": {
@@ -26,6 +28,15 @@
   "homepage": "https://github.com/anthanh/cypress-cucumber-example#readme",
   "devDependencies": {
     "cypress": "^6.4.0",
+    "cypress-cucumber-preprocessor": "^4.0.0",
     "typescript": "^4.1.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/reports/json-reports",
+      "fileSuffix": ".feature"
+    }
   }
 }
